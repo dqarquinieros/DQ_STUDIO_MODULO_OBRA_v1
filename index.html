@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#111827" />
+  <title>DQ Studio | Obras</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">DQ</div><div><strong>DQ Studio</strong><span>Control de obras</span></div></div>
+      <nav id="nav"></nav>
+      <div class="sidebar-footer"><button id="seedBtn" class="ghost">Cargar ejemplo MBL2</button><button id="clearBtn" class="danger ghost">Vaciar datos</button></div>
+    </aside>
+    <main>
+      <header class="topbar"><button id="menuBtn">☰</button><div><h1 id="pageTitle">Inicio</h1><p id="pageSub">Panel general del estudio</p></div><div class="actions"><button id="exportBtn">Exportar copia</button><label class="button"><input id="importInput" type="file" accept="application/json" hidden>Importar copia</label></div></header>
+      <section id="view"></section>
+    </main>
+  </div>
+  <div id="toast"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
